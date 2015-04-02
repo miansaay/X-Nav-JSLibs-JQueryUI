@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Lyfe Travel-Vuelos baratos-Ofertas de billetes de avión-Precio del billete de avión-Compara cientos de sitios de viajes</title>
+    <link rel="shortcut icon" href="imagenes/Logo.jpg">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/lyfe.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/lyfe.css" title="style" />
+</head>
+
+<body>
+   <nav class="navbar navbar-fixed-top navbar-inverse">  
+     <div class="navbar-header">
+       <h1>Lyfe Travel</h1>
+     </div> 
+      <!--<div id="navbar" class="navbar-collapse collapse">
+        <img id='header' src="imagenes/Socios.png" class="img-responsive"></img>
+      </div>-->
+      <div id="navbar" class="navbar-collapse collapse">
+           <!--<img id='header' src="imagenes/Logo.jpg" class="img-responsive"></img>-->
+           <ul class="nav navbar-nav">
+            <li><a href="#">HOTELES</a></li>
+            <li><a href="#about">VUELOS</a></li>
+            <li><a href="#contact">VUELO+HOTEL</a></li>
+            <li class="dropdown" class="active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">VIAJES <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+   </nav>
+
+   <div class="container">
+    <div class="col-md-12">
+     <h1>Viajes</h1><br>
+       <div class="col-md-2">
+        <span>Origen: <input type="text" value="Madrid (MAD)"></span>
+       </div>
+       <div class="col-md-2">
+         <p>Fecha: <input type="text" id="datepicker" value="Lunes 13/04/2015"></p>
+        </div>
+        <div class="col-md-2">
+          <p>Destino: <input type="text" value="Elige un destino.."></p>
+        </div>
+       <div class="col-md-2">
+         <fieldset id="smenu">
+         <p>Duración</p>
+         <select name="speed" id="speed">
+          <option selected="selected">1 semana</option>
+          <option selected="selected">2 semanas</option>
+          <option selected="selected">3 semanas</option>
+          <option>----------</option>
+          <option selected="selected">1 día</option>
+          <option selected="selected">2 días</option>
+          <option selected="selected">3 días</option>
+          <option selected="selected">4 días</option>
+          <option selected="selected">5 días</option>
+          <option selected="selected">6 días</option>
+          <option selected="selected">8 días</option>
+          <option selected="selected">9 días</option>
+        </select>
+        </fieldset>
+     </div>
+     <div class="col-md-2">
+         <fieldset id="smenu">
+         <p>Pasajeros</p>
+         <select name="speed2" id="speed2">
+          <optgroup label="Adultos">
+          <option selected="selected">2 pasajeros</option>
+          <option selected="selected">3 pasajeros</option>
+          <option selected="selected">4 pasajeros</option>
+          <option>----------</option>
+          <option selected="selected">más</option>
+          <optgroup label="Niños">
+          <option selected="selected">2 pasajeros</option>
+          <option selected="selected">3 pasajeros</option>
+          <option selected="selected">4 pasajeros</option>
+          <option>----------</option>
+          <option selected="selected">más</option>
+        </select>
+        </fieldset>
+     </div>
+      <div class="col-md-2">
+      <button id="button">BUSCAR</button>
+      </div>
+    <div>
+    <br></br><br></br><br></br><br></br><br></br><br></br>
+    
+
+    <div class="col-md-12">
+     <h1>Galería de Destinos</h1><br>
+       <div class="col-md-3">
+         <img src="imagenes/Madrid.jpg" class="img-responsive"></img>
+         <span>Madrid</span>
+         <p><a href="#" id="dialog-link1" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <img src="imagenes/Londres.jpg" class="img-responsive"></img>
+         <span>Londres</span>
+         <p><a href="#" id="dialog-link2" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+        <div class="col-md-3">
+         <img src="imagenes/Paris.jpg" class="img-responsive"></img>
+         <span>París</span>
+         <p><a href="#" id="dialog-link3" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+        <div class="col-md-3">
+         <img src="imagenes/Roma.jpg" class="img-responsive"></img>
+         <span>Roma</span>
+         <p><a href="#" id="dialog-link4" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+    </div>
+    <div class="col-md-12">
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Lisboa.jpg" class="img-responsive"></img>
+         <span>Lisboa</span>
+         <p><a href="#" id="dialog-link5" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Bruselas.jpg" class="img-responsive"></img>
+         <span>Bruselas</span>
+         <p><a href="#" id="dialog-link6" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Amsterdam.jpg" class="img-responsive"></img>
+         <span>Ámsterdam</span>
+         <p><a href="#" id="dialog-link7" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Estambul.jpg" class="img-responsive"></img>
+         <span>Estambul</span>
+         <p><a href="#" id="dialog-link8" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+   </div>
+   <div class="col-md-12">
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Berlin.jpg" class="img-responsive"></img>
+         <span>Berlín</span>
+         <p><a href="#" id="dialog-link9" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Praga.jpg" class="img-responsive"></img>
+         <span>Praga</span>
+         <p><a href="#" id="dialog-link10" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Barcelona.jpg" class="img-responsive"></img>
+         <span>Barcelona</span>
+         <p><a href="#" id="dialog-link11" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+       <div class="col-md-3">
+         <br></br>
+         <img src="imagenes/Budapest.jpg" class="img-responsive"></img>
+         <span>Budapest</span>
+         <p><a href="#" id="dialog-link12" class="ui-state-default ui-corner-all"><span></span>Más información</a></p>
+       </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+<!-- ui-dialog -->
+<div id="dialog1" title="Madrid">
+	<span>OFERTA!!!!!</span><br>
+ <span>Últimos vuelos a Madrid al 50%</span><br></br>
+ <img src="imagenes/Madrid2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog2" title="Londres">
+ <span>Visita la joya de Europa.</span><br></br>
+ <img src="imagenes/Londres2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog3" title="París">
+ <span>Visita la joya de Europa.</span><br></br>
+ <img src="imagenes/Paris2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog4" title="Roma">
+ <span>Deleitate con el corazón de Europa.</span><br></br>
+ <img src="imagenes/Roma2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog5" title="Lisboa">
+ <span>OFERTA!!!!!</span><br>
+ <span>Últimos vuelos a Lisboa al 50%</span><br></br>
+ <img src="imagenes/Lisboa2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog6" title="Bruselas">
+ <span>Conoce uno de los pilares de Europa.</span><br></br>
+ <img src="imagenes/Bruselas2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog7" title="Ámsterdam">
+ <span>Deleitate con una de las ciudades más pareticulares de Europa.</span><br></br>
+ <img src="imagenes/Amsterdam2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog8" title="Estambul">
+ <span>Visita el nexo entre oriente y occidente.</span><br></br>
+ <img src="imagenes/Estambul2.jpg" class="img-responsive"></img>
+</div>
+
+<div id="dialog9" title="Berlín">
+ <span>OFERTA!!!!!</span><br>
+ <span>Últimos vuelos a Berlín al 50%</span><br></br>
+ <img src="imagenes/Berlin2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog10" title="Praga">
+ <span>Visita una de las ciudades más extraordinarias de Europa.</span><br></br>
+ <img src="imagenes/Praga2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog11" title="Barcelona">
+ <span>Visita una de las principales cuidades de España.</span><br></br>
+ <img src="imagenes/Barcelona2.jpg" class="img-responsive"></img>
+</div>
+<div id="dialog12" title="Budapest">
+ <span>Conoce una ciudad sin igual.</span><br></br>
+ <img src="imagenes/Budapest2.jpg" class="img-responsive"></img>
+</div>
+<br></br>
+<div id="footer">Copyright &copy;  Lyfe Travel 2015</div>
+</body>
