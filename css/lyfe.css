@@ -62,9 +62,9 @@ h1 {
 #button{
 	cursor: pointer;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
-	border: 3px solid black;
+	border: 2px solid black;
 	background: #228B22;
 	color: white;
 	-moz-border-radius: 10px;
